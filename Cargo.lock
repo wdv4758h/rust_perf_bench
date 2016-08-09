@@ -1,0 +1,4 @@
+[root]
+name = "rust_optimization_bench"
+version = "0.1.0"
+
