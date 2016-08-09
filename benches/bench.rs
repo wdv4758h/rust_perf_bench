@@ -130,7 +130,6 @@ fn find_char_in_pattern_contains(b: &mut Bencher) {
 fn find_char_in_pattern_for(b: &mut Bencher) {
     let data = test::black_box("this is test data.");
     b.iter(|| {
-        let delims = " ,.!?;'\":\t\n()-";
         let delims = [' ', ',', '.', '!', '?', ';', '\'', '"', ':', '\t', '\n', '(', ')', '-'];
         let mut result = vec![];
         for c in data.chars() {
